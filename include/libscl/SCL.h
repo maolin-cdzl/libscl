@@ -180,7 +180,7 @@ extern	"C"	{
  * This is a compile-time check for NULL being equal to 0.  If NULL is non-zero
  * then this next line should create a compile error.
  */
-typedef int SCL_CHECK_NULL[1-(((long long)NULL)*2)];
+//typedef int SCL_CHECK_NULL[1-(((long long)NULL)*2)];
 
 
 /* ************************************************************************* */
