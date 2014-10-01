@@ -27,7 +27,7 @@ set(SOURCES
 	src/tree.c
 	)
 
-add_library(scl SHARED ${SOURCES} ${HEADERS})
+add_library(scl STATIC ${SOURCES} ${HEADERS})
 
 target_compile_definitions(scl PUBLIC C99 _unix)
 
@@ -38,5 +38,3 @@ target_include_directories(scl
 	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include/libscl
 	)
 
-
-install(TARGETS scl DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
