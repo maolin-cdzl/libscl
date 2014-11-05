@@ -189,8 +189,10 @@ extern	"C"	{
 /*                                                                           */
 /* ************************************************************************* */
 
-extern void*calloc(size_t,size_t);
-extern void free(void*);
+//extern void*calloc(size_t,size_t);
+//extern void free(void*);
+#include <stdlib.h>
+
 #define	SCL_ALLOCATOR(s)	(calloc(1,s))
 #define	SCL_DEALLOCATOR(x)	(free(x))
 
