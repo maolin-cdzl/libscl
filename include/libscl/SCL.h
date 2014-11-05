@@ -159,7 +159,7 @@ extern	"C"	{
  * Set up a proper compiler-specific "unused" tag, for tagging unused variables
  * and function arguments.
  */
-#ifdef	__GNUC__
+#if defined( __GNUC__ ) && !defined( __cplusplus )
 #   define	__unused__	__attribute__ ((unused))
 #else
 #   define	__unused__
