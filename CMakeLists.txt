@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
 
 project(libscl C)
 
-include(CMakeStdOpt)
+include(CMakeCStdOpt)
 
 set(HEADERS
 	include/libscl/SCL_symbol.h
