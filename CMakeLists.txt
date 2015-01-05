@@ -38,3 +38,5 @@ target_include_directories(scl
 	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include/libscl
 	)
 
+install(TARGETS scl DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+install(DIRECTORY include/libscl DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
