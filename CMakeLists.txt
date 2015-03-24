@@ -27,7 +27,7 @@ set(SOURCES
 	src/tree.c
 	)
 
-add_library(scl STATIC ${SOURCES} ${HEADERS})
+add_library(scl ${SOURCES} ${HEADERS})
 
 target_compile_definitions(scl PUBLIC C99 _unix)
 
